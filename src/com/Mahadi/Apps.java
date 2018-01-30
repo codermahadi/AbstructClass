@@ -7,6 +7,13 @@ public class Apps {
 
     public static void main(String[] args) {
 
+        A a = new A() {
+            @Override
+            void callme() {
+                System.out.println("Calling from inner class");
+            }
+        };
+
         B b = new B();
 
         b.callme();
